@@ -120,6 +120,9 @@
 
       finalEarnings.textContent = 'Total earned: ' + formatMoney(earnings);
 
+      // Hide the live earnings display when shift ends
+      earningsDisplay.style.display = 'none';
+      
       // Reset UI to allow new shift
       wageInput.disabled = false;
       startBtn.disabled = false;
